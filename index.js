@@ -10,16 +10,20 @@ $(document).ready(function () {
     });
 });
 
-function select() {
+var characterSelect = document.getElementById("characters");
 
-    var characterSelect = document.getElementById("characters");
+if (form !== true){
+               alert('Please select a character');
+           }
+           else if (form == true){
+               console.log('You have selected' + ("characters"));
+           }
 
-    if (characterSelect == "") {
-        alert('Please Select a character!');
-        false;
-    }
-}
+   var form = document.getElementById("charactersubmit");
 
+       form.addEventListener("click", function() {
+    
+   });
 /* var characterArry = {
     "Alex": {
         "name": "Alex",
