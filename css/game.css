@@ -81,12 +81,14 @@ body, html {
     transform: skewY(-10deg);
     background-size: contain;
     border: 5px solid gray;
+    font-size: 25px;
+    color: white;
 }
 
 #charactersname {
     left: 55%;
     position: absolute;
-    top: 65px;
+    top: 85px;
     font-size: 35px;
     transform: skewY(-10deg);
     color: white;
@@ -95,6 +97,13 @@ body, html {
     background-color: aqua;
     text-align: center;
 }
+
+#characterSelect {
+    color: white;
+    font-size: 25px;
+    top: 120px;
+}
+
 
 div.akuma {
     background: url("https://looopo.com/wp-content/uploads/data/2018/1/4/tumblr-mheqmCxoqqdsdoo-SWA00412755-810x1024.png") no-repeat center;
