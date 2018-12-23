@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css\game.css">
-    <title>Solo Mode</title>
+    <link href='https://fonts.googleapis.com/css?family=Ceviche One' rel='stylesheet'>
+    <link rel="stylesheet" href="css\vs.css">
+    <title>Verses</title>
 
 </head>
 
-<body>
+<body id="game">
     <div class="hero-image">
         <div class="grid-container">
             <img id="akuma" class="button" src="images\akuma\kisspng-street-fighter-iii-3rd-strike-street-fighter-iv-s-fighting-5abdb9e5139527.5518646515223833330802.png">
@@ -25,7 +26,7 @@
 
             <img id="cammy" class="button" src="images\cammy\Cammy.png" alt="Cammy">
 
-            <img id="chunli" class="button" src="images\chun li\kisspng-chun-li-m-bison-street-fighter-iii-3rd-strike-st-street-fighter-5ad35f53b89034.005454221523801939756.png"
+            <img id="chun-li" class="button" src="images\chun li\kisspng-chun-li-m-bison-street-fighter-iii-3rd-strike-st-street-fighter-5ad35f53b89034.005454221523801939756.png"
                 alt="Chun Li">
 
             <img id="dhalism" class="button" src="images\dhalism\dhalism.png" alt="Dhalism">
@@ -69,21 +70,25 @@
 
             <img id="yun" class="button" src="images\yun\street_fighter_iii_3rd_strike_yun_by_hes6789-d8zgjp3.png" alt="Yun">
 
-            <img id="guy" class="button" src="images\guy\2175287-guy.png" alt="Guy">
+            <img type="image" id="guy" class="button" src="images\guy\2175287-guy.png" alt="Guy">
         </div>
     </div>
-    
+
     <div id="characters" class="akuma">
         &nbsp;
     </div>
+    <h1 id="game-message">Player 1</h1>
     <div id="charactersname">
     </div>
+
     <div id="charselect">
     </div>
-    <button id="charactersubmit" onclick="myFunction()">Submit</button>
+
+    <button id="charactersubmit" onclick="myFunction()">Next</button>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="index.js"></script>
+    <script src="vs.js"></script>
+    <script src="player.js"></script>
 </body>
 
 </html>

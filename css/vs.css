@@ -2,14 +2,15 @@ body, html {
     height: 100%;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    user-select: none;
 }
 
 .hero-image {
     background-image: url("https://i.pinimg.com/originals/90/40/46/9040464dc2da611ef8ada5afedb00773.gif");
-    height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100%;
 }
 
 /**********************************
@@ -24,7 +25,7 @@ body, html {
     padding: 20px;
     padding-right: 1100px;
     padding-top: 15px;
-    overflow: hidden;
+    height: 80%;
 }
 
 .grid-container>div {
@@ -46,9 +47,7 @@ body, html {
 ***************************************************/
 
 .button {
-    content: "P1";
     padding: 15px;
-    cursor: pointer;
     outline: none;
     border: none;
     border-radius: 15px;
@@ -59,26 +58,43 @@ body, html {
     transform: skewY(-10deg);
 }
 
-.button:hover {
-    background-color: #3e8e41;
+.button:hover{
+    background-color: green;
 }
 
-.button:active {
-    border: 5px solid green;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
+#playerSelect{
+    position: absolute;
+    color: blue;
+    cursor: pointer;
+    font-size: 35px;
+    top: 15px;
+    left: 95px;
+    text-shadow: 2px 2px 5px black;
 }
 
-/********************************/
+/***************************************************
+           Image animation & transition
+***************************************************/
+
+h1 {
+    display: block;
+    left: 75%;
+    position: absolute;
+    top: -55px;
+    font-size: 85px;
+    color: white;
+    font-family: 'Ceviche One';
+    text-shadow: 2px 2px 5px black;
+    letter-spacing: .1em;
+}
 
 #characters {
     display: none;
     left: 55%;
     position: absolute;
     top: 85px;
-    height: 550px;
+    height: 80%;
     width: 550px;
-    transform: skewY(-10deg);
     background-size: contain;
     border: 5px solid gray;
     font-size: 25px;
@@ -90,7 +106,6 @@ body, html {
     position: absolute;
     top: 85px;
     font-size: 35px;
-    transform: skewY(-10deg);
     color: white;
     text-shadow: 2px 2px 5px black;
     width: 150px;
@@ -101,18 +116,17 @@ body, html {
 #charselect {
     color: white;
     font-size: 25px;
-    bottom: 120px;
     position: absolute;
-    left: 75%;
+    left: 53%;
+    bottom: 5%;
     text-shadow: 2px 2px 5px black;
-    transform: skewY(-10deg);
     background-color: red;
 }
 
 #charactersubmit {
     left: 85%;
     position: absolute;
-    top: 720px;
+    bottom: 20px;
     font-size: 25px;
     color: white;
     text-shadow: 2px 2px 5px black;
@@ -221,3 +235,20 @@ div.yun {
 div.guy {
     background: url("https://static.giantbomb.com/uploads/original/11/115901/2175287-guy.png") no-repeat center;
 }
+
+/***************************************************
+                   Player 1 & 2
+***************************************************/
+
+.swipe {
+    overflow: hidden;
+    visibility: hidden;
+    position: relative;
+}
+
+.swipe-wrap {
+    overflow: hidden;
+    position: relative;
+}
+
+.swipe-wrap > div {}
