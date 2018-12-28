@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href='https://fonts.googleapis.com/css?family=Ceviche One' rel='stylesheet'>
-    <link rel="stylesheet" href="css\vs.css">
-    <title>Verses</title>
+    <link rel="stylesheet" href="css\playertwo.css">
+    <title>Player 2</title>
 
 </head>
 
-<body id="game">
+<body>
     <div class="hero-image">
-        <div class="grid-container">
+        <h1 id="game-message">Roster</h1>
+        <div class="grid-container" id="toggle">
             <img id="akuma" class="button" src="images\akuma\kisspng-street-fighter-iii-3rd-strike-street-fighter-iv-s-fighting-5abdb9e5139527.5518646515223833330802.png">
 
             <img id="balrog" class="button" src="images\balrog\balrog.png">
@@ -72,24 +73,22 @@
 
             <img type="image" id="guy" class="button" src="images\guy\2175287-guy.png" alt="Guy">
         </div>
-    </div>
+        <div id="characters" class="akuma">
+            &nbsp;
+        </div>
+        <div id="charactersname">
+        </div>
 
-    <div id="characters" class="akuma">
-        &nbsp;
-    </div>
-    <h1 id="game-message">Roster</h1>
-    <div id="charactersname">
-    </div>
-
-    <div id="charselect">
+        <div id="charselect">
+        </div>
     </div>
 
     <button id="charactersubmit" onclick="playerOne()">Next</button>
-    <button id="submitselect" onclick="changeLink()">Submit</button>
+    <button id="submitselect" onclick="playerOne()">Submit</button>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     <script src="js\vs.js"></script>
-    <script src="js\playerone.js"></script>
+    <script src="js\playertwo.js"></script>
 </body>
 
 </html>

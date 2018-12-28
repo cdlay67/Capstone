@@ -72,9 +72,6 @@ body, html {
     text-shadow: 2px 2px 5px black;
 }
 
-/***************************************************
-           Image animation & transition
-***************************************************/
 
 h1 {
     display: block;
@@ -88,6 +85,9 @@ h1 {
     letter-spacing: .1em;
 }
 
+/***************************************************
+               Player 2
+***************************************************/
 #characters {
     display: none;
     left: 55%;
@@ -124,7 +124,6 @@ h1 {
 }
 
 #charactersubmit {
-    display: block;
     left: 85%;
     position: absolute;
     bottom: 20px;
@@ -237,13 +236,13 @@ div.guy {
     background: url("https://static.giantbomb.com/uploads/original/11/115901/2175287-guy.png") no-repeat center;
 }
 
-/***************************************************
-                 Submit Character
-***************************************************/
 
-#submitselect{
+/***************************************************
+                Submit Character
+***************************************************/
+#submitselect {
     display: none;
-    left: 85%;
+    left: 65%;
     position: absolute;
     bottom: 20px;
     font-size: 25px;
@@ -254,6 +253,3 @@ div.guy {
     border-radius: 12px;
 }
 
-/***************************************************
-                   Player 1 & 2
-***************************************************/
