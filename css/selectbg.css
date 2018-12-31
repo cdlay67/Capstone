@@ -1,0 +1,253 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    user-select: none;
+}
+
+.hero-image {
+    background-image: url("https://i.pinimg.com/originals/90/40/46/9040464dc2da611ef8ada5afedb00773.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+/**********************************
+    Character Grid
+**********************************/
+
+.carousel {
+    display: inline-block;
+    padding-top: 15%;
+    position: absolute;
+    padding-left: 3%;
+}
+
+.grid-container>div {
+    padding: 20px;
+}
+
+#split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+/***************************************************
+            Image borders and animation
+***************************************************/
+
+.button {
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    height: 125px;
+    width: 110px;
+    background-color: lightgray;
+    transition: transform .2s;
+    margin: 0 auto;
+}
+
+.button:hover{
+    background-color: green;
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+}
+
+#playerSelect{
+    position: absolute;
+    color: blue;
+    cursor: pointer;
+    font-size: 35px;
+    top: 15px;
+    left: 95px;
+    text-shadow: 2px 2px 5px black;
+}
+
+
+h1 {
+    display: block;
+    left: 75%;
+    position: absolute;
+    top: -55px;
+    font-size: 85px;
+    color: white;
+    font-family: 'Ceviche One';
+    text-shadow: 2px 2px 5px black;
+    letter-spacing: .1em;
+}
+
+/***************************************************
+               Player 2
+***************************************************/
+#characters {
+    display: none;
+    left: 16%;
+    position: absolute;
+    top: 85px;
+    height: 85%;
+    width: 80%;
+    background-size: contain;
+    border: 5px solid gray;
+    font-size: 25px;
+    color: white;
+}
+
+#charactersname {
+    left: 55%;
+    position: absolute;
+    top: 85px;
+    font-size: 35px;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    width: 150px;
+    background-color: aqua;
+    text-align: center;
+}
+
+#charselect {
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    left: 53%;
+    bottom: 5%;
+    text-shadow: 2px 2px 5px black;
+    background-color: red;
+}
+
+#charactersubmit {
+    left: 85%;
+    position: absolute;
+    bottom: 20px;
+    font-size: 25px;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    width: 150px;
+    text-align: center;
+    border-radius: 12px;
+}
+
+
+div.broken-Temple{
+    background: url("../images/MTI5MDI0MjYyNjcyNjUxNTM4.gif") no-repeat center;
+}
+
+div.london {
+    background: url("../images/83585779-660x420.jpg") no-repeat center;
+}
+
+div.underworld {
+    background: url("../images/under world.jpg") no-repeat center;
+}
+
+div.spain {
+    background: url("../images/Highlights-Spain-2.jpg") no-repeat center;
+}
+
+div.savage-Lands {
+    background: url("../images/savage.jpg") no-repeat center;
+}
+
+div.russia {
+    background: url("../images/russia (1).jpg") no-repeat center;
+}
+
+div.boxing-Ring {
+    background: url("../images/boxing.jpg") no-repeat center;
+}
+
+div.thailand {
+    background: url("../images/fta_hero.jpg") no-repeat center;
+}
+
+div.brazil {
+    background: url("../images/BRAZIL-LINGBE.jpg") no-repeat center;
+}
+
+div.indian {
+    background: url("../images/ga69Z4z2rf5mAdn.jpeg") no-repeat center;
+}
+
+div.ship-Yards {
+    background: url("../images/_92981295_gettyimages-73171491.jpg") no-repeat center;
+}
+
+div.ancient-Temple {
+    background: url("../images/ancient\ jungle\ temple.jpg") no-repeat center;
+}
+
+div.war-Zone {
+    background: url("../images/battlefield_bad_company_2_image11.jpg") no-repeat center;
+}
+
+div.japan-Mount-Fuji {
+    background: url("../images/ibuki/595048184fa06_5950474045019_1189093891.jpg") no-repeat center;
+}
+
+div.new-York {
+    background: url("../images/alex/Real-New-York-Background-Check.jpg") no-repeat center;
+}
+
+div.cherry-Blossoms-Japan {
+    background: url("../images/makoto/Japan.jpg") no-repeat center;
+}
+
+div.mount-Fuji {
+    background: url("../images/oro/32633.jpg") no-repeat center;
+}
+
+div.andaman-Coastline-Thailand {
+    background: url("../images/andaman-coastline-thailand.jpg") no-repeat center;
+}
+
+div.mayan-Temple {
+    background: url("../images/50008494-mayan-temple.jpg") no-repeat center;
+}
+
+div.asian-Spring-Temple  {
+    background: url("../images/yun/China-Art-Museum.jpg") no-repeat center;
+}
+
+div.beijing-China {
+    background: url("../images/yun/China-Art-Museum.jpg") no-repeat center;
+}
+
+div.world-End {
+    background: url("../images/giphy.gif") no-repeat center;
+}
+
+div.ancient-Chinese-City {
+    background: url("../images/shutterstock_779844541-e1537238957113.jpg") no-repeat center;
+}
+
+div.puerto-Rico {
+    background: url("../images/GettyImages-157947660-5a31d844d92b09001a80f8ab.jpg") no-repeat center;
+}
+
+/***************************************************
+                Submit Character
+***************************************************/
+#submitselect {
+    display: none;
+    left: 65%;
+    position: absolute;
+    bottom: 20px;
+    font-size: 25px;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    width: 150px;
+    text-align: center;
+    border-radius: 12px;
+}
+
+/***************************************************
+                Zoom
+***************************************************/

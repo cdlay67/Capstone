@@ -33,5 +33,10 @@ var buttons = $("#charactersubmit, #submitselect").on("click", function () {
 
 function changeLink() {
     window.location.replace("playertwo.html");
-    localStorage.setItem("characters", JSON.stringify(characters));
+    localStorage.setItem("characters", JSON.stringify({name: 'Alex'}));
+}
+
+function playerTwo() {
+    confirm("Click next to continue. Player 2 please select your character!");
+    toggle();
 }
