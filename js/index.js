@@ -1,24 +1,35 @@
-window.onload = function(){
-    alert('please choose a character');
-};
+/* global $ */
 
-$(document).ready(function(){
-    $('img').click(function(e){
-        var newClass = $(this).attr('id');
-        var oldClass = $('#characters').attr('class');
+alert('please choose a character');
 
-        $('#characters').fadeOut(function(){
-            $('#characters').removeClass(oldClass).addClass(newClass).fadeIn('slow');
-        });
-        $('#charactersname').text(newClass.charAt(0).toUpperCase() + newClass.slice(1));
-        $(this).css('background-color', '#00cc99');
-        var characterSelect = $('#characters').attr('class');
+function selectCharacter(){
+    var $characters = $('#characters');
+    var $this = $(this);
+    var newClass = $this.attr('id');
+    var oldClass = $characters.attr('class');
+    var characterSelect = '';
 
-        document.getElementById('charselect').innerHTML =
+    $characters.fadeOut(() => $characters
+        .removeClass(oldClass)
+        .addClass(newClass)
+        .fadeIn('slow')
+    );
+
+    $('#charactersname').text(newClass.charAt(0).toUpperCase() + newClass.slice(1));
+    $this.css('background-color', '#00cc99');
+
+    characterSelect = $('#characters').attr('class');
+
+    document.getElementById('charselect').innerHTML =
             ' You have selected ' + characterSelect.charAt(0).toUpperCase() + newClass.slice(1);
-    });
-});
+}
 
-function myFunction(){
+$('img').click(selectCharacter);
+
+function goToMenu(){
     window.location = 'menu.html';
 }
+
+document
+    .querySelector('#charactersubmit')
+    .addEventListener('click', goToMenu);
