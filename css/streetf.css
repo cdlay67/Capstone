@@ -5,7 +5,7 @@ body, html {
 }
 
 .hero-image {
-    background-image: url(" https://i.pinimg.com/originals/7a/db/20/7adb20b2807fb2e2caa3cdec50491984.gif");
+    background-image: url("/images/7adb20b2807fb2e2caa3cdec50491984.gif");
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;

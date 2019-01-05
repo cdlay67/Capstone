@@ -1,0 +1,223 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-image {
+    background-image: url("dragon place.17ad18a5.gif");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/**********************************
+    Character Grid
+**********************************/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-row-gap: 20px;
+    grid-column-gap: 5px;
+    padding: 20px;
+    padding-right: 1100px;
+    padding-top: 15px;
+    overflow: hidden;
+}
+
+.grid-container>div {
+    padding: 10px;
+}
+
+#split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+/***************************************************
+            Image borders and animation
+***************************************************/
+
+.button {
+    content: "P1";
+    padding: 15px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    height: 100px;
+    width: 100px;
+    background-color: lightgray;
+    transform: skewY(-10deg);
+}
+
+.button:hover {
+    background-color: #3e8e41;
+}
+
+.button:active {
+    border: 5px solid green;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+/********************************/
+
+#characters {
+    display: none;
+    left: 55%;
+    position: absolute;
+    top: 85px;
+    height: 550px;
+    width: 550px;
+    transform: skewY(-10deg);
+    background-size: contain;
+    border: 5px solid gray;
+    font-size: 25px;
+    color: white;
+}
+
+#charactersname {
+    left: 55%;
+    position: absolute;
+    top: 85px;
+    font-size: 35px;
+    transform: skewY(-10deg);
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    width: 150px;
+    background-color: aqua;
+    text-align: center;
+}
+
+#charselect {
+    color: white;
+    font-size: 25px;
+    bottom: 120px;
+    position: absolute;
+    left: 75%;
+    text-shadow: 2px 2px 5px black;
+    transform: skewY(-10deg);
+    background-color: red;
+}
+
+#charactersubmit {
+    left: 85%;
+    position: absolute;
+    top: 720px;
+    font-size: 25px;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    width: 150px;
+    text-align: center;
+    border-radius: 12px;
+}
+
+
+div.akuma{
+    background: url("Akuma_the_demon.a1c3f62a.png") no-repeat center;
+}
+
+div.balrog {
+    background: url("balrog_1270552.aea8ad62.png") no-repeat center;
+}
+
+div.bison {
+    background: url("fighting-games-png-2.45ba4ac0.png") no-repeat center;
+}
+
+div.blanka {
+    background: url("Blanka.8bac4acb.png") no-repeat center;
+}
+
+div.cammy {
+    background: url("kisspng-street-fighter-x-tekken-street-fighter-ii-the-wor-cammy-png-street-fighter-x-tekken-fighting-gam-5b8d68e7709d44.7156933815359940874613.1e40936a.png") no-repeat center;
+}
+
+div.chun-li {
+    background: url("Street_fighter_5_chun_li_by_hes6789-d9s80v8.979fa2f5.png") no-repeat center;
+}
+
+div.dhalism {
+    background: url("Street-fighter-5-characters-dhalsim-section-one-two-column-02-ps4-eu-09feb16.b8f2d89a.png") no-repeat center;
+}
+
+div.fei-long {
+    background: url("kisspng-street-fighter-iv-fei-long-ryu-street-fighter-ii-fei-long-5b2780867c7413.7567698315293154625098.f5cb5fac.png") no-repeat center;
+}
+
+div.guile {
+    background: url("Guile.8d837fe7.png") no-repeat center;
+}
+
+div.honda {
+    background: url("kisspng-street-fighter-ii-the-world-warrior-super-street-sumo-5ab95bac702fa6.6091136015220970684595.6db958e7.png") no-repeat center;
+}
+
+div.ibuki {
+    background: url("ibuki-street-fighter-5-png-2.1b71c14c.png") no-repeat center;
+}
+
+div.ken {
+    background: url("Street_Fighter_-_Ken_Masters_as_he_appears_in_Street_Fighter_III_Third_Strike_Online_Edition.d8b93827.png") no-repeat center;
+}
+
+div.makoto {
+    background: url("kisspng-street-fighter-iii-3rd-strike-super-street-fighte-cartoon-karate-kid-5a70ca9b754a75.9482296715173413394804.3361c9f6.png") no-repeat center;
+}
+
+div.ryu {
+    background: url("ryu-png-7.2bd16ea2.png") no-repeat center;
+}
+
+div.sagat {
+    background: url("sagat_by_androsm-db1jq8x.ca8564e4.png") no-repeat center;
+}
+
+div.thawk {
+    background: url("T._Hawk.e2147dd8.png") no-repeat center;
+}
+
+div.zangief {
+    background: url("526672a2d442b85e1d222f0194ad75e5.4c268a78.png") no-repeat center;
+}
+
+div.skull {
+    background: url("Skullomania-Fighting-EX-Layer-Render.e31388e5.png") no-repeat center;
+}
+
+div.alex {
+    background: url("622d8003aaf55cf2da0f69c59aaa4e5f.ad2bc21a.png") no-repeat center;
+}
+
+div.vega {
+    background: url("Vega_SFV.7405fbb8.png") no-repeat center;
+}
+
+div.deejay {
+    background: url("street_fighter_30th_anniversary_tribute___deejay_by_diegogomezart-db3duvn.4f53c500.png") no-repeat center;
+}
+
+div.dudley {
+    background: url("marvel_vs__capcom_3__dudley_by_kingoffiction-db8eby9.067ca8d3.png") no-repeat center;
+}
+
+div.yang {
+    background: url("street_fighter_iii_3rd_strike_yang_by_hes6789-d8zgjhj.58d11ebd.png") no-repeat center;
+}
+
+div.yun {
+    background: url("e4292abf4cb15e9060b5647e31561a53.31e6a613.png") no-repeat center;
+}
+
+div.guy {
+    background: url("27_guy11.cdeb3435.png") no-repeat center;
+}

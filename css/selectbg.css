@@ -6,7 +6,7 @@ body, html {
 }
 
 .hero-image {
-    background-image: url("https://i.pinimg.com/originals/90/40/46/9040464dc2da611ef8ada5afedb00773.gif");
+    background-image: url("/images/dragon place.gif");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -55,14 +55,16 @@ body, html {
     margin: 0 auto;
 }
 
-.button:hover{
+.button:hover {
     background-color: green;
-    -ms-transform: scale(1.5); /* IE 9 */
-    -webkit-transform: scale(1.5); /* Safari 3-8 */
-    transform: scale(1.5); 
+    -ms-transform: scale(1.5);
+    /* IE 9 */
+    -webkit-transform: scale(1.5);
+    /* Safari 3-8 */
+    transform: scale(1.5);
 }
 
-#playerSelect{
+#playerSelect {
     position: absolute;
     color: blue;
     cursor: pointer;
@@ -71,7 +73,6 @@ body, html {
     left: 95px;
     text-shadow: 2px 2px 5px black;
 }
-
 
 h1 {
     display: block;
@@ -88,6 +89,7 @@ h1 {
 /***************************************************
                Player 2
 ***************************************************/
+
 #selectbg {
     display: none;
     left: 16%;
@@ -96,7 +98,6 @@ h1 {
     height: 85%;
     width: 80%;
     background-size: contain;
-    border: 5px solid gray;
     font-size: 25px;
     color: white;
 }
@@ -104,7 +105,7 @@ h1 {
 #selectbgname {
     left: 55%;
     position: absolute;
-    top: 85px;
+    top: 60px;
     font-size: 35px;
     color: white;
     text-shadow: 2px 2px 5px black;
@@ -118,7 +119,7 @@ h1 {
     font-size: 25px;
     position: absolute;
     left: 53%;
-    bottom: 5%;
+    bottom: 8%;
     text-shadow: 2px 2px 5px black;
     background-color: red;
 }
@@ -135,8 +136,7 @@ h1 {
     border-radius: 12px;
 }
 
-
-div.broken-Temple{
+div.broken-Temple {
     background: url("../images/MTI5MDI0MjYyNjcyNjUxNTM4.gif") no-repeat center;
 }
 
@@ -212,7 +212,7 @@ div.mayan-Temple {
     background: url("../images/50008494-mayan-temple.jpg") no-repeat center;
 }
 
-div.asian-Spring-Temple  {
+div.asian-Spring-Temple {
     background: url("../images/yun/China-Art-Museum.jpg") no-repeat center;
 }
 
@@ -235,6 +235,7 @@ div.puerto-Rico {
 /***************************************************
                 Submit Character
 ***************************************************/
+
 #submitselect {
     left: 65%;
     position: absolute;
