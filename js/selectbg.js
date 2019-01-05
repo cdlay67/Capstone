@@ -1,7 +1,7 @@
 /* global $ */
 var playerOneChoice = localStorage.getItem('Player1');
 var playerTwoChoice = localStorage.getItem('Player2');
-
+var popUpWindow;
 // do what you want with those choices!
 
 function selectBackground(){
@@ -26,3 +26,11 @@ function selectBackground(){
 }
 
 $('img').click(selectBackground);
+
+function goToWindown(){
+    popUpWindow = window.open();
+}
+
+document
+    .querySelector('#submitselect')
+    .addEventListener('click', goToWindown);
