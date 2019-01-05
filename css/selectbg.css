@@ -17,7 +17,7 @@ body, html {
     Character Grid
 **********************************/
 
-.carousel {
+.grid-container {
     display: inline-block;
     padding-top: 15%;
     position: absolute;
@@ -88,7 +88,7 @@ h1 {
 /***************************************************
                Player 2
 ***************************************************/
-#characters {
+#selectbg {
     display: none;
     left: 16%;
     position: absolute;
@@ -101,7 +101,7 @@ h1 {
     color: white;
 }
 
-#charactersname {
+#selectbgname {
     left: 55%;
     position: absolute;
     top: 85px;
@@ -113,7 +113,7 @@ h1 {
     text-align: center;
 }
 
-#charselect {
+#bgselect {
     color: white;
     font-size: 25px;
     position: absolute;
