@@ -50,4 +50,3 @@ document
 // Player n (any number of players, eventually) repeats process
 // Player choices stored to localStorage
 // Change page to bgSelect
-

@@ -9,7 +9,8 @@ function selectBackground(){
     var $this = $(this);
     var newClass = $this.attr('id');
     var oldClass = $selectbg.attr('class');
-    var characterSelect = '';
+
+    localStorage.setItem('background', $this.attr('src'));
 
     $selectbg.fadeOut(() => $selectbg
         .removeClass(oldClass)
@@ -19,18 +20,15 @@ function selectBackground(){
 
     $('#selectbgname').text(newClass.charAt(0).toUpperCase() + newClass.slice(1));
     $this.css('background-color', '#00cc99');
-
-    characterSelect = $('#selectbg').attr('src', '../imagess');
-
-    document.getElementById('bgselect').innerHTML =
-            ' You have selected ' + characterSelect.toUpperCase();
 }
 
 $('img').click(selectBackground);
+
 function goToSubmit(){
-    
+    window.location = 'result.html';
 }
 
 document
     .querySelector('#submitselect')
     .addEventListener('click', goToSubmit);
+

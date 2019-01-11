@@ -1,0 +1,27 @@
+html, body {
+    height: 100%;
+    margin: 0%;
+}
+
+#container {
+    height: 100%;
+    width: 100%;
+}
+
+#player1 {
+    display: block;
+    height: 50%;
+    width: 50%;
+    position: absolute;
+    padding-top: 5%;
+    padding-left: 5%;
+}
+
+#player2 {
+    display: block;
+    height: 50%;
+    width: 50%;
+    position: absolute;
+    padding-top: 5%;
+    padding-left: 60%;
+}
