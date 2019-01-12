@@ -10,18 +10,49 @@ html, body {
 
 #player1 {
     display: block;
-    height: 50%;
-    width: 50%;
     position: absolute;
-    padding-top: 5%;
+    top: 9%;
     padding-left: 5%;
 }
 
 #player2 {
     display: block;
-    height: 50%;
-    width: 50%;
     position: absolute;
-    padding-top: 5%;
-    padding-left: 60%;
+    top: 9%;
+    padding-left: 65%;
+}
+
+#background {
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: inherit;
+}
+
+h1 {
+    display: block;
+    left: 45%;
+    position: absolute;
+    top: 30%;
+    font-size: 130px;
+    color: white;
+    font-family: 'Ceviche One';
+    text-shadow: 2px 2px 5px black;
+    letter-spacing: .1em;
+}
+
+/***************************************************
+                Reset Button
+***************************************************/
+
+#reset {
+    left: 65%;
+    position: absolute;
+    bottom: 20px;
+    font-size: 25px;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    width: 150px;
+    text-align: center;
+    border-radius: 12px;
 }
