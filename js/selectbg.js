@@ -32,3 +32,6 @@ document
     .querySelector('#submitselect')
     .addEventListener('click', goToSubmit);
 
+$('audio').remove();
+$('<audio controls="controls" autobuffer="autobuffer" autoplay="autoplay"> <source src="./music/Recording (14).m4a"  type="audio/ogg"> </audio>');
+

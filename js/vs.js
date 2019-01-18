@@ -17,7 +17,7 @@ function selectCharacter(){
 
     $('#charactersname').text(newClass.charAt(0).toUpperCase() + newClass.slice(1));
 
-    $this.css('background-color', '#00cc99');
+    $this.css('background-color', '#00cc99').attr('P1');
 
     characterSelect = $('#characters').attr('class');
     
