@@ -17,12 +17,12 @@ function selectCharacter(){
 
     $('#charactersname').text(newClass.charAt(0).toUpperCase() + newClass.slice(1));
 
-    $this.css('background-color', '#00cc99').attr('P1');
+    $this.css('background-color', '#00cc99').getElementsByClassName('button::after').innerHTML = 'P1';
 
     characterSelect = $('#characters').attr('class');
-    
+
     document.getElementById('charselect').innerHTML =
-            ' You have selected ' + characterSelect.charAt(0).toUpperCase() + newClass.slice(1);
+        ' You have selected ' + characterSelect.charAt(0).toUpperCase() + newClass.slice(1);
 
     choices.push(characterSelect);
 }

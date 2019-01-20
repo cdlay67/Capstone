@@ -6,6 +6,10 @@ var p1 = document.getElementById('player1');
 var p2 = document.getElementById('player2');
 var background = document.getElementById('background');
 
+var audio = new Audio('music/Recording (14).m4a');
+
+audio.play();
+
 
 p1.innerHTML = ` <img id="Player1"  style="width:100%; height:100%;" alt="" src="../images/${playerOneChoice}/${playerOneChoice}.png" />`;
 
