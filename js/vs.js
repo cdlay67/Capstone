@@ -1,39 +1,4 @@
-```function performNextAction() {
-    if (choices.length < 2) {
-      confirm(`Player ${choices.length + 1}, choose your character!`);
-      $(".grid-container").one("click", "img", selectCharacter);
-    } else {
-      choices.forEach((choice, index) =>
-        localStorage.setItem(`Player${index + 1}`, choice),
-      );
-  
-      window.location = "selectbg.html";
-    }
-  }```
-  Notice this   if (choices.length < 2) {
-  When I use that same logic in your function above to see which players turn it is, I have to check for
-   if (choices.length > 0)
-  To see if it is player 2 turn
-  If you notice issues when you expecting player 2 and keep getting 1 that is probably why
-  
-  Damian Clay-Downing [12:19 AM]
-  Oh ok that makes senses. When I was doing the button click function it would p2 for both player 1 and 2
-  
-  Nick Diaz [12:19 AM]
-  Ya that is why
-  Remember, arrays start at 0
-  So when you have 2 players in an array, the max it can be is 1
-  1 would === 2nd player in that case.
-  Hey I tried to push the new code back to your repo but I cant
-  How do you want me to send it to you since I am not a contributor to your repo?
-  
-  Damian Clay-Downing [12:20 AM]
-  Ah ok. I some times forget that
-  
-  Nick Diaz [12:20 AM]
-  1 sec
-  vs.js
-  ```/* global $ */
+/* global $ */
   var choices = [];
   
   alert("Players please choose your character! Click the next button to start.");
