@@ -18,8 +18,7 @@
     $("#charactersname").text(
       newClass.charAt(0).toUpperCase() + newClass.slice(1),
     );
-  
-    // New code from Nick
+    
     // Uses new HTML in vs.html
     // Uses new class in vs.css on line 268 .player-select
     const characterId = `${event.target.id}-select`;
@@ -30,11 +29,9 @@
     }
   
     // Old code replaced with code above
-    // Added in new HTML to wrap each chacter players select in the vs.html file
+    // Added in new HTML to wrap each character players select in the vs.html file
     // Added 1 new class called .player-select in the vs.css file on line 268
-    //   $this
-    //     .css("background-color", "#00cc99")
-    //     ..getElementsByClassName("button::after").innerHTML = "P1";
+    $this.css("background-color", "#00cc99");
   
     characterSelect = $("#characters").attr("class");
   

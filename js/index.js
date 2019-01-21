@@ -2,6 +2,7 @@
 
 alert('please choose a character');
 
+
 function selectCharacter(){
     var $characters = $('#characters');
     var $this = $(this);

@@ -11,9 +11,6 @@
 </head>
 
 <body>
-    <audio controls autoplay style=" width:300px;" autobuffer="autobuffer" >
-        <source src="music\Recording (14) (online-audio-converter.com).mp3" type="audio/mpeg">
-    </audio>
 
     <div class="container">
         <div id="player1" class="item"></div>
@@ -26,6 +23,11 @@
     <div id="background"></div>
 
     <button id="reset">Reset</button>
+
+    <audio controls autoplay loop>
+        <source src="music\Recording (14) (online-audio-converter.com).mp3" type="audio/mp3">
+        <embed src="music\Recording (14) (online-audio-converter.com).mp3" autostart="true" hidden="false">
+    </audio>
 
     <script src="./js/result.js"></script>
 </body>
