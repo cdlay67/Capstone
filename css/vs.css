@@ -62,12 +62,9 @@ body, html {
     background-color: green;
 }
 
-.button::after {
-    content: "P1";
-    position: absolute;
-    font-size: 24em;
-    display: block;
-    color: red;
+button::after{
+ color: crimson;
+ font-size: 24em;
 }
 
 #playerSelect {
@@ -80,6 +77,17 @@ body, html {
     text-shadow: 2px 2px 5px black;
 }
 
+h2 {
+    display: block;
+    left: 48%;
+    position: absolute;
+    top: -72px;
+    font-size: 80px;
+    color: crimson;
+    font-family: 'Ceviche One';
+    text-shadow: 2px 2px 5px black;
+    letter-spacing: .1em;
+}
 /***************************************************
            Image animation & transition
 ***************************************************/
